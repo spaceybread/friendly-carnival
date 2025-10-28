@@ -3,10 +3,8 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() -> io::Result<()> {
-    // Specify the path to your file
-    let file_path = Path::new("input.txt");
+    let file_path = Path::new("sample_scripts/defineVariable.py");
 
-    // Open the file
     let file = File::open(file_path)?;
     let reader = io::BufReader::new(file);
 
